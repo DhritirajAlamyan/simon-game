@@ -1,0 +1,60 @@
+body {
+  background-color: #011F3F;
+}
+
+h1 {
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  margin-top: 5%;
+  font-size: 3rem;
+  color: #F5EEDC;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 8%;
+}
+
+.first-row {
+  /* To get the first two button in the first row & the second two button in the second row. */
+  display: block;
+}
+
+.color {
+  /* To fix the height and width of the buttons we use dispaly property as "inline-block" because buttons are "inline" elements. */
+  display: inline-block;
+  height: 12rem;
+  width: 12rem;
+  margin: 3% 3%;
+  border: solid;
+  border-radius: 15%;
+  border-width: 0.5rem;
+}
+
+#green {
+  background-color: #49FF00;
+}
+
+#red {
+  background-color: #FF1700;
+}
+
+#yellow {
+  background-color: #FBFF00;
+}
+
+#blue {
+  background-color: #113CFC;
+}
+
+/*This class will be added to the button whenever it is pressed to create animation.*/
+.pressed {
+  /*It will create a shadow around a box to give "flash" effect.*/
+  /*Here grey will be the colour of the shadow.*/
+  box-shadow: 5px 5px 5px 5px grey;
+}
+
+/*This class will be added to the body to create animation when the game is over.*/
+.game-over {
+  background-color: #E60965;
+}
